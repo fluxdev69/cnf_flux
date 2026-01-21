@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/v1/status",
-      "destination": "https://raw.githubusercontent.com/fluxdev69/cnf_flux/main/config.json"
-    }
-  ]
-}
