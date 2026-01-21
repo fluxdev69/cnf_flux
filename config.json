@@ -1,0 +1,14 @@
+{
+  "app_version": "1.0.0",
+  "welcome_message": "Flux Media Ultimate - Online",
+  "maintenance_mode": false,
+  "ads_enabled": true,
+  "api_endpoints": {
+    "jikan_base": "https://api.jikan.moe/v4",
+    "mangadex_base": "https://api.mangadex.org"
+  },
+  "ads_config": {
+    "frequency": 6,
+    "banners": []
+  }
+}
