@@ -1,14 +1,68 @@
 {
-  "app_version": "1.0.0",
-  "welcome_message": "Flux Media Ultimate - Online",
-  "maintenance_mode": false,
-  "ads_enabled": true,
-  "api_endpoints": {
-    "jikan_base": "https://api.jikan.moe/v4",
-    "mangadex_base": "https://api.mangadex.org"
+  "meta": {
+    "config_v": 2,
+    "min_build_number": 1,
+    "force_update": false,
+    "store_url": "https://fluxmedia.app/download"
   },
-  "ads_config": {
-    "frequency": 6,
-    "banners": []
+  "system": {
+    "maintenance_mode": false,
+    "maintenance_message": "Estamos calibrando los servidores. Volvemos en unos minutos 🚀",
+    "privacy_policy_url": "https://fluxmedia.app/privacy"
+  },
+  "features": {
+    "enable_anime": true,
+    "enable_manga": true,
+    "enable_music": true,
+    "enable_downloads": true,
+    "enable_adult_content": false
+  },
+  "networking": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "connect_timeout_ms": 10000,
+    "receive_timeout_ms": 15000
+  },
+  "apis": {
+    "anime": {
+      "provider": "JikanV4",
+      "base_url": "https://api.jikan.moe/v4",
+      "backup_url": "https://api.jikan.moe/v4"
+    },
+    "manga": {
+      "provider": "MangaDex",
+      "base_url": "https://api.mangadex.org",
+      "image_proxy": "https://uploads.mangadex.org"
+    },
+    "music": {
+      "search_terms": [
+        "Anime Openings 2025",
+        "Best Anime OST",
+        "LoFi Anime Hip Hop"
+      ]
+    }
+  },
+  "home_ui": {
+    "hero_banner": {
+      "active": true,
+      "title": "Solo Leveling: Arise",
+      "image_url": "https://wallpapercave.com/wp/wp13401768.jpg",
+      "action_type": "deep_link",
+      "action_value": "anime_id:52299"
+    },
+    "announcement": {
+      "show": false,
+      "text": "¡Nueva actualización disponible! Corrigiendo errores de Jikan.",
+      "color": "0xFFE53935"
+    }
+  },
+  "ads": {
+    "enabled": true,
+    "interstitial_frequency": 4,
+    "providers": [
+      {
+        "id": "adsterra",
+        "priority": 1
+      }
+    ]
   }
 }
